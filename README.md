@@ -1,0 +1,13 @@
+# BC2406 Project
+
+(Extract from Executive Summary)
+
+This project aims to recommend strategies to enhance White Rock’s (Fictitious Company) decision making process and reduce risk in technology stock investment using accurate and timely predictions of technology stock price movements through data-driven solutions.
+
+Our team outlined an overview of the current investment decision-making approaches used by investors, namely fundamental and technical analysis. Based on the assumption that White Rock mainly utilises fundamental analysis, we identified areas for improvement using technical analysis. We identified 2 issues with over-reliance on fundamental analysis, namely the inaccuracies and inefficiencies in predictions due to the high volatility of technology stocks and the need to consider external stock market patterns.
+
+Our first strategy involves utilising classification models to predict changes in stock prices based on the selected financial indicators. Notable discoveries were made on the variable ‘Class’ and its relationship with ‘Market Capitalization’, as well as ‘Price Variation’ and its relationship with ‘Market Capitalization’. We used both CART and Logistic Regression to develop models in identifying the financial indicators that are most significant in affecting stock prices. Subsequently, we verified the accuracy of our findings using the test set and obtained an accuracy of 69.7% and 63.2% for the CART and Logistic Regression models respectively. Due to a higher prediction accuracy, our team concluded to employ CART and its corresponding variables - ‘Free Cash Flow Yield, ‘Operating Cash Flow Sales Ratio’ and ‘Return on Equity’ - to identify profitable investment opportunities in technology stocks.
+
+Our second strategy involves utilising Auto Regressive Integrated Moving Average (ARIMA) to perform time series forecasting on short-term stock price movements based on the selected stock’s historical price data. We employed the ARIMA model on the test set to predict future stock prices and plotted the forecasted prices against the actual prices. The forecasted data closely matched and captured the actual data within the error range of the model which implies that the ARIMA model is capable of accurately forecasting stock prices.
+
+The 2 above-mentioned strategies are to be used in conjunction; the ARIMA model is used first to forecast the future price trends of the identified stock then using the CART model to validate the results obtained from applying the ARIMA model. By combining the 2 strategies, White Rock can integrate the benefits of CART with the ARIMA model to overcome the 2 issues identified as mentioned above.
